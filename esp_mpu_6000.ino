@@ -2,8 +2,7 @@
 #define Addr 0x68
 
 void setup() {
-  // put your setup code here, to run once:
-
+ 
 Wire.begin(2,14);
 Serial.begin(115200);
 
@@ -22,7 +21,7 @@ delay(300);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
 
   writeTo(Addr,0x6B,0x29);
   writeTo(Addr,0x6C,0xC0);
